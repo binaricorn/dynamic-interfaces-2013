@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+
+}
+
+body {
+	font-family: 'Nova Mono', cursive;
+
+}
+
+#main {
+	width:50%;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	margin-top: 50px;
+	padding: 50px;
+}
+
+h1 {
+	padding-bottom: 30px;
+}
+
+p {
+	padding-bottom: 15px;
+}
+
+p.is-admin span.username {
+	background: yellow;
+}
+
+
+p.is-me span.username {
+	background: lime;
+}
+
+input#chatbox{
+	width: 100%;
+
+}
