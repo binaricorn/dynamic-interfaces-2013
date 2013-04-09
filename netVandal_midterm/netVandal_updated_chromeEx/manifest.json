@@ -1,0 +1,24 @@
+  {
+  "name": "Extension",
+  "version": "0",
+  "description": "",
+  "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+   },
+  "manifest_version": 2,
+  "permissions": ["tabs", "http://www.nytimes.com/*"],
+    "content_scripts": [
+    {
+        "matches": [ "http://www.nytimes.com/*"],
+        "js": ["jquery.min.js", "myScript_2.js", "jquery-ui/development-bundle/ui/jquery.ui.core.js", "jquery-ui/development-bundle/ui/jquery.ui.widget.js", "jquery-ui/development-bundle/ui/jquery.ui.mouse.js", "jquery-ui/development-bundle/ui/jquery.ui.draggable.js"],
+        "all_frames": true
+    }
+  ],
+  "web_accessible_resources": ["mystyles.css"]
+}
+
+/*
+can also do this in the permissions part:
+http://localhost:8080/*
+*/
